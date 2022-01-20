@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
-body {
-  margin: 0;
-  padding: 0;
-}
 
 :root {
   --dark: #0d0d2b;
@@ -19,12 +15,14 @@ body {
   background: linear-gradient(to bottom right, #3823b7, #0e0e2b);
   font-family: "Rubik", sans-serif;
   color: var(--white);
+  margin: 0 auto;
+  padding: 0;
+  max-width: 100%;
 }
 
 .header {
-  max-width: 80%;
-  padding-right: 15px;
-  padding-left: 15px;
+  max-width: 1202%;
+
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -72,9 +70,8 @@ body {
 }
 
 .wrapper {
-  max-width: 80%;
-  padding-right: 15px;
-  padding-left: 15px;
+  max-width: 1202px;
+
   margin: 0 auto;
 }
 
@@ -265,13 +262,17 @@ body {
 
 .calc-foot {
   display: block;
+  justify-content: space-between;
   align-items: center;
   background: #fbfcfe;
   border-radius: 0px 0px 16px 16px;
-
   max-width: 942px;
   padding-top: 48px;
   margin: 0 auto;
+
+  -webkit-box-shadow: 0px 123px 300px 76px rgba(223, 226, 240, 0.91);
+  -moz-box-shadow: 0px 123px 300px 76px rgba(223, 226, 240, 0.91);
+  box-shadow: 0px 123px 300px 76px rgba(223, 226, 240, 0.91);
 }
 
 .calc-foot__title {
@@ -306,4 +307,71 @@ body {
   margin: 0;
   margin-left: 48px;
   padding-bottom: 48px;
+}
+
+.page-light {
+  background: rgb(248, 249, 251);
+  background: radial-gradient(
+    circle,
+    rgba(248, 249, 251, 1) 0%,
+    rgba(250, 251, 255, 1) 100%
+  );
+}
+
+.page-light__test {
+  font-size: 40px;
+  text-align: center;
+  color: #0d0d2b;
+  max-width: 741px;
+  font-weight: 700;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.crypto {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.crypto-item {
+  background-color: var(--purple);
+  border-radius: 16px;
+  flex: 0 0 30.7%;
+  padding: 24px 24px;
+  box-sizing: border-box;
+  width: 370px;
+  height: 433px;
+}
+
+.crypto-item__button {
+  background-color: var(--blue);
+  font-size: 18px;
+  padding: 18.5px 32px;
+  border-radius: 32px;
+  font-weight: 500;
+  transition: 0.2s ease background-color;
+  text-decoration: none;
+  color: var(--white);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  max-width: 205px;
+}
+
+.crypto-item__button-icon {
+  background-color: var(--white);
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  background-image: url(/images/bt_error.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 2px solid rgba(43, 7, 110, 0.2);
+}
+
+.crypto-item__button-text {
+  margin-right: 24px;
 }
